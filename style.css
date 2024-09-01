@@ -1,0 +1,128 @@
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+
+    margin: 20px;
+
+}
+
+
+
+
+.header {
+
+    font-family: "Playfair Display", serif;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin: 20px;
+
+}
+
+
+
+
+.sub-header1 {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+
+
+
+.sub-header2 {
+
+    text-align: center;
+
+    font-size: 60px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+
+
+
+.image-container {
+
+    text-align: center;
+
+    margin: 20px 0;
+
+}
+
+
+
+
+.content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: large;
+
+}
+
+
+
+
+.left-column,
+
+.right-column {
+
+    width: 48%;
+
+}
+
+
+
+
+.image-description {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    margin: 10px;
+
+}
+
+
+
+
+.family-tree {
+
+    border: 1px solid black;
+
+    padding: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+
+
+.form-section {
+
+    margin: 20px;
+
+    padding: 20px;
+
+    border: 1px solid black;
+
+}

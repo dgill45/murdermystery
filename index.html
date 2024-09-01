@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Murder Mystery Times</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">The Murder Mystery Times</div>
+    <div class="sub-header1">London, Friday, October 13th, 1933</div>
+    <div class="sub-header2">POPULAR AUTHOR AND AFFLUENT SOCIALITE BARBARA PAIGE TURNER MURDERED!</div>
+
+    <div class="image-container">
+        <img src="/assets/DALL·E 2024-07-13 21.29.47.jpg" alt="Barbara Paige Turner">
+        <div class="image-description">ABOVE: BARBARA PAIGE TURNER, FAMOUS AUTHOR, PHOTOGRAPHED FOR HER 50TH BIRTHDAY
+            PORTRAIT</div>
+    </div>
+
+    <div class="content">
+        <div class="left-column">
+            <p><strong>Introduction:</strong> It's 1930's London, and the Paige Turner family and friends have gathered
+                at Barbara Paige Turner's Meddleton Manor, to celebrate the sixtieth birthday of her son, Clive Paige
+                Turner.</p>
+            <p>The guests enjoyed drinks in the drawing room at 7pm, before sitting down to a formal dinner at 7:30pm.
+                Dinner was served promptly at 8pm.</p>
+            <p>Some guests went straight to the drawing room, others didn't. There were various comings and goings
+                throughout the evening. During the course of the evening Barbara Paige Turner was murdered. She was a
+                rich, brash, colourful author who was very outspoken. Her husband died just after they got married and
+                she lived her life to the fullest. Her death beyond her 60th birthday was a shock to all.</p>
+            <p>She was known for her successful series of books called Larry Plotter, which had successfully sold all
+                over the world. This had made her even richer than she was before. All the fame and money had gone to
+                her head and she began to abuse her wealth and dominated her family and friends by attempting to meddle
+                in everyone's affairs.</p>
+            <p>Everyone at the dinner had a good reason for wanting her dead but who actually had the guts to go through
+                with it? Maybe it was you?!</p>
+        </div>
+        <div class="right-column">
+            <div class="family-tree">
+                <h3>The Paige Turner Family Tree</h3>
+                <ul>
+                    <li>Barbara Paige Turner</li>
+                    <li>Agnes Paige Turner
+                        <ul>
+                            <li>Tarquin Uppity (Nephew of Barbara)</li>
+                            <li>Julia Bishop (Carer of Agnes)</li>
+                        </ul>
+                    </li>
+                    <li>Lionel Paige Turner
+                        <ul>
+                            <li>Margaret Paige Turner</li>
+                            <li>Bruce "Skippy" Jonson (Boyfriend of Margaret)</li>
+                        </ul>
+                    </li>
+                    <li>Clive Paige Turner
+                        <ul>
+                            <li>Jacqueline de Montfort</li>
+                        </ul>
+                    </li>
+                    <li>Louisa de Montfort
+                        <ul>
+                            <li>Patrick de Montfort</li>
+                        </ul>
+                    </li>
+                    <li>Gregory King (Fiancé of Louisa)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <form id="signupForm">
+            <h3>RSVP for the Murder Mystery Event</h3>
+            <p>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="address">Your Address:</label>
+                <input type="text" id="address" name="address" required>
+            </p>
+            <p>
+                <label>Will you be attending this event?</label>
+                Yes <input type="radio" name="attending" value="Yes" required>
+                No <input type="radio" name="attending" value="No">
+            </p>
+            <p>
+                <label>Do you wish to be assigned a character?</label>
+                Yes <input type="radio" name="character" value="Yes" required>
+                No <input type="radio" name="character" value="No">
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
