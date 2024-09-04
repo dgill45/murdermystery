@@ -27,13 +27,44 @@ document.addEventListener("DOMContentLoaded", function() {
             character: character.value
         };
 
-        // For now, just log the data to the console
-        console.log("Form Submitted:", formData);
+        // POST the form data to the server
+        fetch('http://localhost:3000/api/rsvp', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Show a confirmation message
+            alert("Thank you for your submission!");
 
-        // Show a confirmation message or redirect the user
-        alert("Thank you for your submission!");
+            // Fetch and display the updated list of RSVPs
+            fetchRSVPList();
 
-        // Clear the form (optional)
-        form.reset();
+            // Clear the form (optional)
+            form.reset();
+        })
+        .catch(error => console.error('Error submitting RSVP:', error));
     });
+
+    // Fetch and display the list of RSVPs when the page loads
+    fetchRSVPList();
+
+    function fetchRSVPList() {
+        fetch('http://localhost:3000/api/rsvps')
+        .then(response => response.json())
+        .then(data => {
+            const rsvpList = document.getElementById('rsvp-list');
+            rsvpList.innerHTML = ''; // Clear existing list
+
+            data.forEach(rsvp => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${rsvp.name} (${rsvp.attending}) - Character: ${rsvp.character}`;
+                rsvpList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error fetching RSVP list:', error));
+    }
 });
